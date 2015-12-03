@@ -1,0 +1,35 @@
+{
+  "name": "spend",
+  "authors": [
+    "Angus McMillan <nxtonic@gmail.com>",
+    "Kieren Andrews <kierenjandrews@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "http://squaremelon.ml/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.10.6",
+    "hammerjs": "hammer.js#~2.0.4",
+    "sweetalert": "~1.1.3",
+    "odometer": "~0.4.7",
+    "Ionicons": "ionicons#~2.0.1",
+    "node-uuid": "~1.4.7",
+    "store": "store-js#~1.3.17",
+    "angular": "~1.4.8",
+    "angular-ui-router": "ui-router#~0.2.15"
+  }
+}
