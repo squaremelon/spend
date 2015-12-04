@@ -1,3 +1,6 @@
 <div ng-controller="baseCtrl">
-  Welcome {{user.name}}
+  Hey, <span>{{user.firstName}}</span>
+  <input ng-model="user.firstName" type="text"/>
+  <button ng-click="storeUser()">store user object</button>
+  <button ng-click="unstoreUser()">unstore user object</button>
 </div>
