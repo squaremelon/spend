@@ -2,12 +2,13 @@ var gulp = require('gulp');
 var inject = require('gulp-inject');
 var less = require('gulp-less');
 var serve = require('gulp-serve');
+var plumber = require('gulp-plumber');
 var wiredep = require('wiredep').stream;
 
 var path = require('path');
 
 var options = {
-  servePort: 8000
+  serverPort: 8000
 }
 
 var paths = {
@@ -22,7 +23,7 @@ gulp.task('plug', ['less', 'inject']);
 
 gulp.task('serve', serve({
   root: ['./'],
-  port: options.servePort
+  port: options.serverPort
 }));
 
 gulp.task('wiredep', function () {
@@ -44,9 +45,8 @@ gulp.task('inject', ['wiredep'] ,function () {
 
 gulp.task('less', function () {
   return gulp.src(paths.less)
-    .pipe(less({
-
-    }))
+    .pipe(plumber())
+    .pipe(less())
     .pipe(gulp.dest('./static/css'));
 });
 

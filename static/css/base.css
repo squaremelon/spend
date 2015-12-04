@@ -1,4 +1,70 @@
+button {
+  background: transparent;
+  padding: 0.25em 0.5em;
+  outline: none;
+  margin-bottom: 1em;
+  border: 0px solid;
+}
+button.button-link {
+  border: 2px solid;
+  font-weight: 800;
+  font-size: 14px;
+  margin-right: 0.75em;
+  padding: 0.5em 0.8em;
+}
+header button {
+  margin: 0px 10px;
+  font-size: 1.5em;
+}
+input[type=text] {
+  border: 2px solid;
+  outline: none;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  background-color: transparent;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-  padding: 80px;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: #4a556a;
+  box-sizing: border-box;
+  height: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 0px;
+  color: #f6f6f6;
+  background-color: #4a556a;
+  justify-content: space-between;
+}
+.clear {
+  clear: both;
+}
+.ui-container {
+  padding: 20px;
+  width: 95%;
+  max-width: 800px;
+  margin: 60px auto;
+  height: calc(75vh - 60px);
+  text-align: center;
+  box-sizing: border-box;
+}
+.ui-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.center-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }

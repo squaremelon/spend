@@ -1,4 +1,4 @@
-window.app.controller('baseCtrl', function($scope){
+window.app.controller('profileCtrl', function($scope) {
 
   $scope.storeUser = function() {
     init()

@@ -1,4 +1,54 @@
+@import (reference) 'colors.less';
+@import 'inputs.less';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  padding: 80px;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: @navy-blue-color;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 0px;
+  color: @white-color;
+  background-color: @navy-blue-color;
+  justify-content: space-between;
+}
+
+.clear {
+  clear: both;
+}
+
+.ui-container {
+  padding: 20px;
+  width: 95%;
+  max-width: 800px;
+  margin: 60px auto;
+  height: ~"calc(75vh - 60px)";
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ui-wrapper {
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.center-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
