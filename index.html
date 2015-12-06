@@ -37,9 +37,11 @@
   <body>
     <header>
       <button ui-sref="profile"><i class="icon ion-android-person"></i></button>
-      <button ui-sref="home">spend by squaremelon</button>
+      <button ui-sref="home"><i class="icon ion-android-home"></i></button>
       <button ui-sref="settings"><i class="icon ion-android-options"></i></button>
     </header>
-    <div class="ui-container" ui-view></div>
+    <div class="ui-container">
+      <div class="ui-wrapper" ui-view></div>
+    </div>
   </body>
 </html>

@@ -7,7 +7,7 @@ window.app = angular.module('spendApp', [
 
   $locationProvider.hashPrefix('!');
 
-  $urlRouterProvider.otherwise("/nope");
+  $urlRouterProvider.otherwise("/");
 
   $stateProvider
   .state('home', {
@@ -21,9 +21,5 @@ window.app = angular.module('spendApp', [
   .state('profile', {
     url: "/profile",
     templateUrl: "./static/js/templates/profile.html"
-  })
-  .state('nope', {
-    url: "/nope",
-    templateUrl: "./static/js/templates/nope.html"
   })
 });

@@ -4,12 +4,14 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: @white-color;
 }
 
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   color: @navy-blue-color;
   box-sizing: border-box;
+  background-color: @navy-blue-color;
   height: 100%;
 }
 
@@ -18,8 +20,8 @@ header {
   align-items: center;
   padding: 10px 0px;
   margin: 0px;
-  color: @white-color;
-  background-color: @navy-blue-color;
+  color: @navy-blue-color;
+  background-color: @white-color;
   justify-content: space-between;
 }
 
@@ -28,23 +30,37 @@ header {
 }
 
 .ui-container {
-  padding: 20px;
+  padding: 0 20px;
   width: 95%;
   max-width: 800px;
-  margin: 60px auto;
-  height: ~"calc(75vh - 60px)";
+  margin: 0px auto;
   text-align: center;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .ui-wrapper {
   position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1;
+  top:60px;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 0 2.5%;
+  z-index:-1;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-content {
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  border: 2px solid;
+  border-radius: 0.25em;
+  padding: 40px;
 }
 
 .center-center {
