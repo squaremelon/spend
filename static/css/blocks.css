@@ -1,8 +1,0 @@
-.block {
-  height: 180px;
-  flex-grow: 1;
-  border: 2px solid;
-  flex-shrink: 0;
-  width: 320px;
-  margin: 4px;
-}
