@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var inject = require('gulp-inject');
 var less = require('gulp-less');
-var serve = require('gulp-serve');
+var gls = require('gulp-live-server');
 var plumber = require('gulp-plumber');
 var wiredep = require('wiredep').stream;
 
@@ -12,7 +12,7 @@ var options = {
 }
 
 var paths = {
-  js: ['./static/js/**/*.js'],
+  js: ['./static/js/**/*.*'],
   dependencies: ['./static/bower/'],
   less: ['./static/less/**/*.less']
 }
@@ -21,10 +21,14 @@ gulp.task('default', ['watch', 'serve']);
 
 gulp.task('plug', ['less', 'inject']);
 
-gulp.task('serve', serve({
-  root: ['./'],
-  port: options.serverPort
-}));
+gulp.task('serve', function(){
+  var server = gls.static('./', 8000);
+  server.start();
+
+  gulp.watch([paths.js, paths.less], function (file) {
+    server.notify.apply(server, [file]);
+  });
+});
 
 gulp.task('wiredep', function () {
   gulp.src('./index.html')
