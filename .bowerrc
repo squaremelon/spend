@@ -1,6 +1,3 @@
 {
-  "directory": "./static/bower/",
-  "scripts": {
-    "postinstall": "gulp wiredep"
-  }
+  "directory": "./static/bower/"
 }

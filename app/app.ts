@@ -2,14 +2,17 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
 // Static Components
-import {SidebarComponent}       from './sidebar/sidebar';
-import {TopbarComponent}        from './topbar/topbar';
+import {SidebarComponent}       from './components/sidebar';
+import {TopbarComponent}        from './components/topbar';
 
 // Router Components
-import {HomeComponent}          from './home/home';
-import {CalculatorComponent}    from './calculator/calculator';
-import {GraphComponent}         from './graph/graph';
-import {SettingsComponent}      from './settings/settings';
+import {HomeComponent}          from './components/home';
+import {CalculatorComponent}    from './components/calculator';
+import {GraphComponent}         from './components/graph';
+import {SettingsComponent}      from './components/settings';
+
+// Services
+import {Storejs} from './services/store';
 
 @Component({
     selector: 'app',
@@ -30,7 +33,9 @@ import {SettingsComponent}      from './settings/settings';
 ])
 
 export class SpendApp {
-  constructor() {
+  constructor(store: Storejs) {
     console.log("Loaded SpendApp");
+
+    store.pullUserObject();
   }
 }
