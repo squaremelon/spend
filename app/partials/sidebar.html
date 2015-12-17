@@ -1,10 +1,13 @@
-<div class="sidebar-column">
-  <div class="sidebar-buttons">
-    <p>
-      <button [routerLink]="['Home']">home</button>
-      <button [routerLink]="['Calculator']">calculator</button>
-      <button [routerLink]="['Graph']">graph</button>
-      <button [routerLink]="['Settings']">settings</button>
-    </p>
+<div class="sidebar">
+  <div class="sidebar-column">
+    <div class="sidebar-buttons">
+      <i class="icon ion-home" [routerLink]="['Home']"></i>
+      <i class="icon ion-calculator" [routerLink]="['Calculator']"></i>
+      <i class="icon ion-pie-graph" [routerLink]="['Graph']"></i>
+      <i class="icon ion-gear-b" [routerLink]="['Settings']"></i>
+    </div>
+    <div class="sidebar-branding">
+      <img src="static/img/svg/squaremelon-icon-simple.svg"/>
+    </div>
   </div>
 </div>

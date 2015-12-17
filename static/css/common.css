@@ -1,0 +1,109 @@
+html {
+  font-family: "Avenir", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  color: #313131;
+}
+
+.help-icon {
+  color: #00D293;
+  margin-left: 5px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.topbar {
+  height: 60px;
+  line-height: 60px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.header-square {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #FF0052;
+  float: left;
+}
+
+.header-main {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 24px;
+  float: left;
+}
+
+.header-main span.half-size {
+  font-size: 0.5em;
+}
+
+.header-profile {
+  float: right;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 11px;
+  padding: 0 20px;
+}
+
+.sidebar {
+  width: 60px;
+  float: left;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 60px);
+  background-color: #313131;
+}
+
+.sidebar-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-buttons {
+  margin-top: -10px;
+}
+
+.sidebar-buttons i {
+  margin: 30px auto;
+  display: block;
+  padding: 0.2em;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.sidebar-branding {
+  opacity: 0.25;
+}
+
+.sidebar-branding img {
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  -webkit-filter: grayscale(100%);
+  width: 100%;
+}
+
+.workspace {
+  width: calc(100% - 60px);
+  float: left;
+  text-align: center;
+  padding: 30px 15px;
+  max-height: calc(100% - 60px);
+  box-sizing: border-box;
+}
