@@ -1,9 +1,18 @@
+// boot.ts
+
+// Angular Modules
 import {bootstrap}    from 'angular2/platform/browser'
-import {SpendApp} from './app'
 import {ROUTER_PROVIDERS} from 'angular2/router';
-import {Storejs} from './services/store';
+
+// Application Module
+import {SpendApp} from './app'
+
+// Service Modules
+import {StoreService} from './services/store-service';
+import {GraphService} from './services/graph-service';
 
 bootstrap(SpendApp, [
   ROUTER_PROVIDERS,
-  Storejs
+  StoreService,
+  GraphService
 ]);

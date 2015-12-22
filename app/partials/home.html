@@ -1,3 +1,10 @@
 <div class="home">
   <h1>Dashboard</h1>
+  <h2>Profile</h2>
+  <p>{{ data.name }}</p>
+  <h2>
+    Your launch code is:
+  </h2>
+  <pre><span *ngFor="#number of data.numbers">{{number}}</span></pre>
+  <button (click)="generate_uuid()">Regenerate</button>
 </div>

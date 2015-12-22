@@ -1,3 +1,7 @@
+// spend by squaremelon
+// app.ts
+
+// Angular Modules
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
@@ -10,9 +14,6 @@ import {HomeComponent}          from './components/home';
 import {CalculatorComponent}    from './components/calculator';
 import {GraphComponent}         from './components/graph';
 import {SettingsComponent}      from './components/settings';
-
-// Services
-import {Storejs} from './services/store';
 
 @Component({
     selector: 'app',
@@ -33,9 +34,7 @@ import {Storejs} from './services/store';
 ])
 
 export class SpendApp {
-  constructor(store: Storejs) {
+  constructor() {
     console.log("Loaded SpendApp");
-
-    store.pullUserObject();
   }
 }
