@@ -10,12 +10,8 @@
 - [Installation](#Installation)
 - [Contributing](#Contributing)
 
-***
-
 ### About ###
 Spend is a web application developed by **[squaremelon](http://squaremelon.ml)** which helps manage and *plan earnings and expenditure* to make it easier for people to *save money* and decide where they can *cut back on spending*, and where they can float a little bit more of their disposable income.
-
-***
 
 ### Requirements ###
 #### To use ####

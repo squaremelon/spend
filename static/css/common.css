@@ -115,3 +115,19 @@ html {
 .align-justify {
   text-align: justify;
 }
+
+.calculator-income {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: right;
+  float: left;
+  padding-right: 15px;
+}
+
+.calculator-expenditure {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: left;
+  float: right;
+  padding-left: 15px;
+}
