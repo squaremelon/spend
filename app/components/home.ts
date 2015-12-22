@@ -25,8 +25,8 @@ export class HomeComponent {
     var x = [];
     var r;
 
-    for (let i = 0; i < 48; i++) {
-      var r = Math.floor(Math.random() * 16);
+    for (let i = 0; i < 8; i++) {
+      r = Math.floor(Math.random() * 16);
       r = r.toString(16);
       x.push(r);
     }
