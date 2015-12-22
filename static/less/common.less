@@ -1,14 +1,17 @@
+@import (reference) 'utils/colors.less';
+@import (reference) 'utils/dimensions.less';
+
 html {
   font-family: "Avenir", "Source Sans Pro", sans-serif;
   font-weight: 500;
   box-sizing: border-box;
-  background-color: #F0F0F0;
-  color: #313131;
+  background-color: @color-off-white;
+  color: @color-dark-grey;
   overflow: hidden;
 }
 
 .help-icon {
-  color: #00D293;
+  color: @color-green;
   margin-left: 5px;
   font-size: 18px;
   display: inline-block;
@@ -16,26 +19,26 @@ html {
 }
 
 .topbar {
-  height: 60px;
-  line-height: 60px;
-  background-color: #FFF;
+  height: @bar-size;
+  line-height: @bar-size;
+  background-color: @color-white;
   overflow: hidden;
 }
 
 .header-square {
-  width: 60px;
-  height: 60px;
+  width: @bar-size;
+  height: @bar-size;
   font-size: 22px;
-  line-height: 60px;
+  line-height: @bar-size;
   text-align: center;
-  background-color: #FF0052;
+  background-color: @color-branding;
   float: left;
 }
 
 .header-main {
-  height: 60px;
-  line-height: 60px;
-  padding: 0 15px;
+  height: @bar-size;
+  line-height: @bar-size;
+  padding: 0 @padding-size;
   font-weight: 500;
   font-size: 24px;
   float: left;
@@ -47,23 +50,23 @@ html {
 
 .header-profile {
   float: right;
-  height: 60px;
+  height: @bar-size;
   display: inline-block;
   vertical-align: middle;
-  line-height: 60px;
+  line-height: @bar-size;
   letter-spacing: 0.025em;
   font-size: 11px;
   padding: 0 20px;
 }
 
 .sidebar {
-  width: 60px;
+  width: @bar-size;
   float: left;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100% - 60px);
-  background-color: #313131;
+  height: ~"calc(100% - @bar-size)";
+  background-color: @color-dark-grey;
 }
 
 .sidebar-column {
@@ -96,38 +99,22 @@ html {
 
 .sidebar-branding img {
   margin: 0 auto;
-  padding: 15px;
+  padding: @padding-size;
   box-sizing: border-box;
   -webkit-filter: grayscale(100%);
   width: 100%;
 }
 
 .workspace {
-  width: calc(100% - 60px);
+  width: ~"calc(100% - 60px)";
   float: left;
   text-align: center;
-  padding: 15px 15px;
+  padding: @padding-size;
   overflow-y: auto;
-  max-height: calc(100% - 60px);
+  max-height: ~"calc(100% - 60px)";
   box-sizing: border-box;
 }
 
 .align-justify {
   text-align: justify;
-}
-
-.calculator-income {
-  box-sizing: border-box;
-  width: 50%;
-  text-align: right;
-  float: left;
-  padding-right: 15px;
-}
-
-.calculator-expenditure {
-  box-sizing: border-box;
-  width: 50%;
-  text-align: left;
-  float: right;
-  padding-left: 15px;
 }
