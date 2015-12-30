@@ -1,8 +1,10 @@
 # **[Spend](http://squaremelon.ml/spend)** by [squaremelon](http://squaremelon.ml) 💸 #
 
+
 **Latest version:** 0.0.0-pre [not yet mvp]
 
-[![Build Status][https://travis-ci.org/squaremelon/spend.svg]][https://travis-ci.org/squaremelon/spend]
+[![Build Status](https://travis-ci.org/squaremelon/spend.svg)](https://travis-ci.org/squaremelon/spend)
+
 
 ## Table of contents ##
 - [About](#About)
@@ -68,3 +70,11 @@ If you want to help there are a few things that it would be pretty handy for you
 
 ##### Adding new features #####
 We highly encourage you to fork this project and then make a pull request with enhancements / improvements, **however** before doing this, it would be a good idea to [open a new issue](https://github.com/squaremelon/spend/issues/new) to discuss it first. This makes sure that the feature is considered useful, and also just to make sure that there isn't a specific reason for exactly not adding said feature.
+
+***
+
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
+
+[![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
+
+[![forthebadge](http://forthebadge.com/images/badges/compatibility-betamax.svg)](http://forthebadge.com)
