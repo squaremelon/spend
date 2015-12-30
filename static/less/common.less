@@ -1,5 +1,7 @@
-@import (reference) 'utils/colors.less';
-@import (reference) 'utils/dimensions.less';
+@import (reference) './utils/colors.less';
+@import (reference) './utils/dimensions.less';
+
+@import './utils/misc.less';
 
 html {
   font-family: "Avenir", "Source Sans Pro", sans-serif;
@@ -8,14 +10,6 @@ html {
   background-color: @color-off-white;
   color: @color-dark-grey;
   overflow: hidden;
-}
-
-.help-icon {
-  color: @color-green;
-  margin-left: 5px;
-  font-size: 18px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .topbar {
@@ -65,7 +59,7 @@ html {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  height: ~"calc(100% - @bar-size)";
+  height: ~"calc(100% - 60px)";
   background-color: @color-dark-grey;
 }
 

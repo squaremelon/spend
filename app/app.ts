@@ -33,8 +33,4 @@ import {SettingsComponent}      from './components/settings';
   {path: '/**', redirectTo: ['/Home']}
 ])
 
-export class SpendApp {
-  constructor() {
-    console.log("Loaded SpendApp");
-  }
-}
+export class SpendApp {}
