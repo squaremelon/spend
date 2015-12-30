@@ -2,6 +2,8 @@
 
 **Latest version:** 0.0.0-pre [not yet mvp]
 
+[![Build Status][https://travis-ci.org/squaremelon/spend.svg]][https://travis-ci.org/squaremelon/spend]
+
 ## Table of contents ##
 - [About](#About)
 - [Requirements](#Requirements)
@@ -54,7 +56,7 @@ To access the application, go to [localhost:3000](http://localhost.3000) on your
 ***
 
 ### Contributing ###
-We appreciate all efforts to help develop this application, and we will do the very best we can to *help you **help us** help you **help everyone.***
+We appreciate all efforts to help develop this application, and we will do the very best we can to *help you* **help us** *help you* **help everyone.**
 
 ##### Stuff it helps to know #####
 If you want to help there are a few things that it would be pretty handy for you to know.
