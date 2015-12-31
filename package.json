@@ -18,7 +18,7 @@
     "lite": "lite-server",
     "gulp": "gulp watch",
     "clean": "rimraf ./app/**/*.js ./app/**/*.js.map ./app/*.js ./app/*.js.map",
-    "test": "tsc && ./node_modules/karma/bin/karma start",
+    "test": "tsc && ./node_modules/karma/bin/karma start karma.conf.js",
     "go": "concurrent \"npm run watch\" \"npm run lite\" \"npm run gulp\""
   },
   "dependencies": {

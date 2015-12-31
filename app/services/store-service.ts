@@ -11,7 +11,7 @@ export class StoreService {
 		console.log("construct StoreService");
   }
 
-	public pullUserObject () {
+	public pullUserObject() {
 		return this.user.name;
 	}
 

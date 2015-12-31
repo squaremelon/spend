@@ -1,3 +1,4 @@
+
 // Karma configuration
 // Generated on Wed Dec 23 2015 14:16:12 GMT+1100 (AEDT)
 
@@ -8,6 +9,7 @@ module.exports = function(config) {
       'karma-jasmine',
       'karma-firefox-launcher',
       'karma-super-dots-reporter',
+      'karma-coverage'
     ],
     frameworks: [
       'jasmine',

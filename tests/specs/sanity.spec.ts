@@ -1,11 +1,12 @@
-describe('test suite', () => {
+describe('meta-tests', () => {
 
-  it('is able to handle the truth', () => {
+  it('are able to handle the truth', () => {
     expect(true).toBe(true);
   });
 
-  it('is able to do some maths', () => {
-    expect(3).toBeGreaterThan(2);
+  it('are able to do some maths', () => {
+    expect(2).not.toBeGreaterThan(3);
+    expect(10).toBeGreaterThan(6);
   });
 
 });

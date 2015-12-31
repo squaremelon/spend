@@ -2,3 +2,4 @@ node_modules/
 static/webpack/
 app/**/*.js
 tests/**/*.spec.js
+coverage/

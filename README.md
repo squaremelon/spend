@@ -48,6 +48,7 @@ npm install && npm run go
 ~~~
 
 This will automagically:
+
 1. Install all the required packages.
 2. Start a development server using browsersync on port 3000 (by default).
 3. Open up the local instance of the application in your default browser.
