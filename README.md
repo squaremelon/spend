@@ -1,10 +1,9 @@
 # **[Spend](http://squaremelon.ml/spend)** by [squaremelon](http://squaremelon.ml) 💸 #
 
-
-**Latest version:** 0.0.0-pre [not yet mvp]
-
-[![Build Status](https://travis-ci.org/squaremelon/spend.svg)](https://travis-ci.org/squaremelon/spend)
-
+[![GitHub tag](https://img.shields.io/github/tag/squaremelon/spend.svg?style=flat-square)](https://github.com/squaremelon/spend/tags)
+[![Travis](https://img.shields.io/travis/squaremelon/spend.svg?style=flat-square)](https://travis-ci.org/squaremelon/spend)
+[![GitHub issues](https://img.shields.io/github/issues/squaremelon/spend.svg?style=flat-square)](https://github.com/squaremelon/spend/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub license](https://img.shields.io/github/license/squaremelon/spend.svg?style=flat-square)](https://github.com/squaremelon/spend/blob/master/LICENSE)
 
 ## Table of contents ##
 - [About](#About)
@@ -49,10 +48,10 @@ npm install && npm run go
 
 This will automagically:
 
-1. Install all the required packages.
-2. Start a development server using browsersync on port 3000 (by default).
-3. Open up the local instance of the application in your default browser.
-4. Detect any changes to the assets and re-inject them as required (no refreshing needed).
+1.  Install all the required packages.
+2.  Start a development server using browsersync on port 3000 (by default).
+3.  Open up the local instance of the application in your default browser.
+4.  Detect any changes to the assets and re-inject them as required (no refreshing needed).
 
 To access the application, go to [localhost:3000](http://localhost.3000) on your machine to see the local version running.
 
@@ -71,6 +70,10 @@ If you want to help there are a few things that it would be pretty handy for you
 
 ##### Adding new features #####
 We highly encourage you to fork this project and then make a pull request with enhancements / improvements, **however** before doing this, it would be a good idea to [open a new issue](https://github.com/squaremelon/spend/issues/new) to discuss it first. This makes sure that the feature is considered useful, and also just to make sure that there isn't a specific reason for exactly not adding said feature.
+
+
+#### More details ####
+Find out how to structure good commit messages and other stuff at [CONTRIBUTING.md](https://github.com/squaremelon/spend/blob/master/CONTRIBUTING.md)
 
 ***
 
