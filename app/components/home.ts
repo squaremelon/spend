@@ -4,32 +4,34 @@ import {StoreService} from '../services/store-service';
 @Component({
   selector: 'home',
   templateUrl: 'app/partials/home.html',
+  providers: [StoreService]
 })
 
 export class HomeComponent {
-  private data: any;
-  private store: any;
 
-  constructor(store: StoreService) {
-    this.store = store;
-    this.data = {
-      name: store.user.name,
-      numbers: []
-    }
+  data: any;
+  launchCode: any;
+  _store: StoreService;
 
-    // initialization
+  constructor(_store: StoreService) {
+    this._store = _store;
+    this.data = this.getName();
     this.generate_uuid();
   }
 
-  public generate_uuid() {
+  getName() {
+    return this._store.get();
+  }
+
+  generate_uuid() {
     var x = [];
     var r;
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 40; i++) {
       r = Math.floor(Math.random() * 16);
       r = r.toString(16);
       x.push(r);
     }
-    this.data.numbers = x;
+    return this.launchCode = x;
   }
 }

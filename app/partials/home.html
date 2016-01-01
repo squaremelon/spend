@@ -5,6 +5,6 @@
   <h2>
     Your launch code is:
   </h2>
-  <pre><span *ngFor="#number of data.numbers">{{number}}</span></pre>
+  <pre><span *ngFor="#char of launchCode">{{ char }}</span></pre>
   <button (click)="generate_uuid()">Regenerate</button>
 </div>
